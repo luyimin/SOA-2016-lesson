@@ -50,3 +50,5 @@ $ bundle install
 $ ruby fizzbuzz_spec.rb
 ```
 You should see all tests pass if you have successfully finished your assignment.
+
+by soumya,Ray
