@@ -1,6 +1,6 @@
 ## write your fizzbuzz method in this file
 # see http://en.wikipedia.org/wiki/Fizz_buzz for details on FizzBuzz game
-def fizzbuzz(size , &strategy )
+def fizzbuzz(size )
 
   arr = []
 
@@ -17,9 +17,9 @@ def fizzbuzz(size , &strategy )
         arr[n-1] = 'Buzz'
       end
     end
-        if strategy
-          arr[1] do yield 
-          end
+
+          arr.each do |size|
+            yield size if block_given?
           end
       return arr
 end
